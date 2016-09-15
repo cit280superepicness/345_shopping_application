@@ -1,0 +1,14 @@
+// footer 
+
+var currDateTime = new Date();
+var day = ["Sunday", "Monday", "Tuesday", "Wednesday", 
+            "Thursday", "Friday", "Saturday"];
+dayOfWeek = day[currDateTime.getDay()];
+
+var minutes = ('0'+currDateTime.getMinutes()).slice(-2);
+
+document.write("<center><p>" + currDateTime.getHours() + ':' + minutes + 
+        " (24 hour clock) \n on " + dayOfWeek + " " + (currDateTime.getMonth() + 1) + 
+        "-" + currDateTime.getDate() + "-" + currDateTime.getFullYear() + "&nbsp;&nbsp;&nbsp;" 
+        + "</p></center>");
+document.write("<center><p>&copy; 2014 OU Online Hand Craft Store. All rights reserved.</center>");
